@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business_CRUD</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0d3;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-image: url('./login\ page\ background.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .container {
+        background-color: #21d35d;
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 450px;
+    }
+    h2 {
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 30px;
+    }
+    input[type="text"]{
+        width: 90%;
+        padding: 5px;
+        /*margin: 5px 0;*/
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-radius: 4px;
+    }
+    input[type="submit"] {
+        background-color: #ee5a86;
+        color: black;
+        padding: 10px 5px;
+        margin: 2px 0;
+        border: 1px solid black;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #f03de7;
+    }
+    </style>
+</head>
+<body>
+        <div class="container">
+        <h2>Business details</h2>
+        <form action="#" method="post" height="50%">
+            <label for="business_name">Business Name:</label><br>
+            <input type="text" id="business_name" name="business_name"><br><br>
+            
+            <label for="category_id">Category ID:</label><br>
+            <input type="text" id="category_id" name="category_id"><br><br>
+            
+            <label for="geolocation">Geolocation:</label><br>
+            <input type="text" id="geolocation" name="geolocation"><br><br>
+            
+            <label for="description">Description:</label><br>
+            <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+            
+            <label for="contact_info">Contact Info:</label><br>
+            <input type="text" id="contact_info" name="contact_info"><br><br>
+            
+            <label for="status">Status:</label><br>
+                <select id="status" name="status">
+                <option value="open">Open</option>
+                <option value="closed">Closed</option>
+                </select><br><br>
+            
+            <label for="timing">Timing:</label><br>
+            <input type="text" id="timing" name="timing"><br><br>
+
+            <label for="days">Days:</label><br>
+            <input type="text" id="days" name="days"><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+</body>
+</html>
